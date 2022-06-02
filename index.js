@@ -21,7 +21,14 @@ const dataBelanjaan = [
 ];
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-const listBelanjaan = null;
+const listBelanjaan = (dataBelanjaan) => {
+  let data = []
+  for (x = 0; x < dataBelanjaan.length; x++) {
+    data.push(`'- ${dataBelanjaan[x].nama} x ${dataBelanjaan[x].kuantitas}',`)
+  }
+
+  return data
+};
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const totalBelanjaan = null;
