@@ -24,7 +24,7 @@ const dataBelanjaan = [
 const listBelanjaan = (dataBelanjaan) => {
   let dataBelanja = []
   for (x = 0; x < dataBelanjaan.length; x++) {
-    dataBelanja.push(`'- ${dataBelanjaan[x].nama} x ${dataBelanjaan[x].kuantitas}',`)
+    dataBelanja.push(`- ${dataBelanjaan[x].nama} x ${dataBelanjaan[x].kuantitas},`)
   }
 
   return dataBelanja
